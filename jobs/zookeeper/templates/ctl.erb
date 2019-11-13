@@ -12,6 +12,7 @@ export LOG_DIR=/var/vcap/sys/log/zookeeper
 export RUN_DIR=/var/vcap/sys/run/zookeeper
 export PIDFILE=/var/vcap/sys/run/zookeeper/pid
 export TMPDIR=/var/vcap/data/zookeeper/tmp
+export JVMFLAGS="-Xmx<%= p('heap_size') %>"
 
 case $1 in
 

@@ -94,3 +94,6 @@ properties:
   force_sync:
     description: "Requires updates to be synced to media of the transaction log before finishing processing the update. Setting to 'no' improves performance dramatically at the cost of losing recent commits if all nodes crash at the same time"
     default: "yes"
+  heap_size:
+    description: "Java heap size e.g. 400m"
+    default: "400m"
